@@ -12,7 +12,7 @@ publishDir = "docs"
   post = "/:year/:month/:day/:slug"
 
 [params]
-  avatar = "img/EdwinCabezas.png"
+  avatar = "img/EdwinAvatar.png"
   author = "Edwin Cabezas"
   description = "Enjoy my web site"
 
