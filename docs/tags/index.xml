@@ -5,6 +5,34 @@
     <link>https://edwincabezas.dev/tags/</link>
     <description>Recent content in Tags on Edwin Cabezas</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="https://edwincabezas.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://edwincabezas.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>aws</title>
+      <link>https://edwincabezas.dev/tags/aws/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://edwincabezas.dev/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://edwincabezas.dev/tags/golang/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://edwincabezas.dev/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>projects</title>
+      <link>https://edwincabezas.dev/tags/projects/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>https://edwincabezas.dev/tags/projects/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
