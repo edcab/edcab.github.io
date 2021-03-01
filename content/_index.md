@@ -7,7 +7,7 @@ Desarrollador Sr de Software apasionado por la creación de productos de
 
 vanguardia apalancados por la nube AWS. 
 
-Echa un vistazo a algunos de mis trabajos [proyectos].
+Echa un vistazo a algunos de mis [proyectos].
 
 Para obtener más información, consulte mi contenido académico y [profesional].
 
