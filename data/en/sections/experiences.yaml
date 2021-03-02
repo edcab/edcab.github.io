@@ -1,0 +1,66 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: ADL Digital Lab
+    url: "https://www.adldigitallab.com/"
+    location: Bogota D.C.
+    # company overview
+    overview: We digitally transform existing products from end to end that renew user experiences through an agile way of working.
+  positions:
+  - designation: Senior Backend Developer
+    start: April 2019
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Design and implementation of REST APIs with Java or Golang programming language.
+    - Development of distributed solutions in Cloud AWS using services such as SNS, SQS, ECS, ApiGateway, EC2, Serverless architecture, Lambda functions.
+    - Persistence of information with DynamoDB database.
+    - Data storage in memory using ElastiCache REDIS.
+    - Distributed traceability of Logs and correlation implementing Opentelemetry- Java and Golang.
+
+- company:
+    name: Mercury TFS
+    url: "https://mercury-tfs.com/"
+    location: Bogota D.C.
+    overview: The complete modular and comprehensive e-business solution for Foreign Trade.
+  positions:
+  - designation: Software Developer Team Lead
+    start: May 2016
+    end: April 2019
+    responsibilities:
+    - Deploying and prepare the Release plan.
+    - Assignment of user stories to the development team.
+    - Estimation of user stories.
+    - Design and implementation of REST APIs with Java programming language and Spring Boot.
+    - Migration of distributed solutions in Cloud using ApiGateway services, microservices architecture,
+    - Persistence of information with OracleDB database.
+
+- company:
+    name: Carvajal Tecnologia y Servicios
+    url: "https://www.carvajaltys.com/"
+    location: Bogota D.C.
+    overview: Carvajal Tecnología y Servicios S.A.S. is a multinational company, part of the Carvajal S.A holding, where we create information exchange systems that connect citizens with the State and companies with their clients and suppliers. Thus, we increase efficiency by reducing transaction costs in business and state ecosystems.
+  positions:
+  - designation: Architecture Jr and development engineer
+    start: Febreuray 2014
+    end: May 2016
+    responsibilities:
+    - JEE application migration developing under JSF Marco Primefaces technology.
+    - Develop software components under the Java 7 programming language, adhering to technologies such as; EJB 3.0, SOAP, WSDL, JMS, Struts presentation FW.
+    - Analyze and design JEE solutions based on design patterns and functional requirements.
+    - Document the technical designs of the software components to be developed.
+    - Understand and ensure the requirements of software components.
+    - Develop unit tests to ensure the quality of development.
+    - Develop integration tests of the different components developed.
+
