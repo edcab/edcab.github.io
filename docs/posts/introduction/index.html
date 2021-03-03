@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Categories</title>
+    <title>Introduction</title>
     
 
 
@@ -36,8 +36,13 @@
 <link rel="stylesheet" href="/css/style.css"/>
 
     
-    <link rel="stylesheet" href="/css/layouts/list.css">
-    <link rel="stylesheet" href="/css/navigators/sidebar.css">
+<meta name="description" content="Introduction to Sample Post" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/css/layouts/single.css"/>
+<link rel="stylesheet" href="/css/navigators/sidebar.css">
 
 
     
@@ -96,16 +101,13 @@
 
       
       
-  
-  
-
   <section class="sidebar-section" id="sidebar-section">
     <div class="sidebar-holder">
       <div class="sidebar" id="sidebar">
         <input type="text" value="" placeholder="Search" data-search="" id="search-box" />
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
-            <li id="list-heading"><a href="/categories" data-filter="all"></a></li>
+            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
             <div class="subtree">
                 
   
@@ -121,9 +123,12 @@
   
   
   
+    
+    
+  
   
     
-    <li><a class="" href="/posts/introduction/">Introduction</a></li>
+    <li><a class="active" href="/posts/introduction/">Introduction</a></li>
   
 
 
@@ -138,22 +143,90 @@
       
       
 <section class="content-section" id="content-section">
-  <div class="content container-fluid" id="content">
-    <div class="container-fluid post-card-holder" id="post-card-holder">
+  <div class="content">
+    <div class="container p-0 read-area">
       
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://edwincabezas.dev/images/default-hero.jpg);'>
+      </div>
+
       
-    </div>
-    <div class="paginator">
-      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/EdwinAvatar.png'/>
+          <h5 class="author-name">Edwin Cabezas</h5>
+          <p>June 8, 2020</p>
+        </div>
+
+        <div class="title">
+          <h1>Introduction</h1>
+        </div>
+
+        <div class="post-content" id="post-content">
+          <p>Greeting! This is an introduction post. This post tests the followings:</p>
+<ul>
+<li>Appear post page</li>
+</ul>
+
+        </div>
+
+        
+        
+          <div class="btn-improve-page">
+              <a href="https://github.com/edcab/edcab.github.io/edit//content/posts/introduction/index.md">
+                <i class="fas fa-code-branch"></i>
+                Improve this page
+              </a>
+          </div>
+        
+
+        
+      <hr />
+        <div class="row next-prev-navigator">
 
 
+  
+    
+      
+      <div class="col-md-6 previous-article">
+        <a href="/posts/golang/" class="btn btn-outline-info">
+          <span><i class="fas fa-chevron-circle-left"></i> Prev</span>
+          <br />
+          <span>Golang Microservices</span>
+        </a>
+      </div>
+      
+    
+    
+  
+
+  
+
+</div>
+
+      <hr />
+      
+      
+      </div>
     </div>
   </div>
+  
 </section>
 
 
       
-       
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">Table of Contents</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents"></nav>
+      </div>
+    </div>
+    
+  </section>
+
     </div>
 
     
@@ -304,7 +377,12 @@
 
     
     
-    <script src="/js/list.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
 
   </body>
 </html>
