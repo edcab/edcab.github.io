@@ -24,6 +24,7 @@ experiences:
     # give some points about what was your responsibilities at the company.
     responsibilities:
     - Design and implementation of REST APIs with Java or Golang programming language.
+    - Participate in scrum ceremonies like sprint backlog refinement and planning.
     - Development of distributed solutions in Cloud AWS using services such as SNS, SQS, ECS, ApiGateway, EC2, Serverless architecture, Lambda functions.
     - Persistence of information with DynamoDB database.
     - Data storage in memory using ElastiCache REDIS.
