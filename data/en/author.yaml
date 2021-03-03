@@ -2,7 +2,7 @@
 name: "Edwin Cabezas"
 nickname: "Edwin"
 # greeting message before your name. it will default to "Hi! I am" if not provided
-greeting: "Hi, I am"
+greeting: "Hi, Im"
 image: "images/author/EdwinAvatar.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
@@ -11,7 +11,7 @@ contactInfo:
 
 # some summary about what you do
 summary:
-  - I am a Backend Developer Sr
-  - I am a AWS Services Developer
+  - Im Backend Developer Sr
+  - Im AWS Services Developer
   - I love cloud computing and API REST
-  - I love to work with digital transformation
+  - I love to work in digital transformation

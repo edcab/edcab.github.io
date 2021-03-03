@@ -1,6 +1,7 @@
 ---
 title: "Introduction"
-date: 2020-06-08T08:06:25+06:00
+date: 2021-03-01T08:06:25+06:00
+hero: /images/posts/writing-posts/example.svg
 description: Introduction to Sample Post
 menu:
   sidebar:
