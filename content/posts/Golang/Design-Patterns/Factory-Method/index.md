@@ -1,14 +1,14 @@
 ---
 title: "Handling objects creating with Factory method"
 date: 2021-04-08T08:06:25+06:00
-description: Sample post with multiple images, embedded video ect.
+description: 
 menu:
   sidebar:
     name: Factory method
     identifier: design-pattern-golang-factory-method
     parent: design-pattern-golang
     weight: 10
-hero: /images/forest.jpg
+hero: images/forest.jpg
 ---
 
 ## Factory Method
