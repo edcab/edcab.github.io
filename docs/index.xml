@@ -13,7 +13,7 @@
       <pubDate>Thu, 08 Apr 2021 08:06:25 +0600</pubDate>
       
       <guid>https://edwincabezas.dev/posts/golang/design-patterns/factory-method/</guid>
-      <description>Image Sample Factory Method Is a pattern of type creational that delegates the construction of objects to an interface. The interface has a method that return a type of specific object.
+      <description>Factory Method Is a pattern of type creational that delegates the construction of objects to an interface. The interface has a method that return a type of specific object.
 Problem The company TransportPassengers has to transport many passengers after your workday.
 Solution First of all, we have to create our factory:
 func GetTransportType(quPassengers int) (product.ITransport, error) { if quPassengers &amp;gt;= 1 &amp;amp;&amp;amp; quPassengers &amp;lt;=5 { return concrete.NewTaxi(), nil } if quPassengers &amp;gt;= 6 &amp;amp;&amp;amp; quPassengers &amp;lt;=15 { return concrete.</description>
