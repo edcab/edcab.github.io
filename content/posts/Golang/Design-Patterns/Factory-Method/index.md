@@ -1,5 +1,5 @@
 ---
-title: "Handling objects creating with Factory method"
+title: "Handling creating of concrete types with Factory method"
 date: 2021-04-08T08:06:25+06:00
 description: 
 menu:

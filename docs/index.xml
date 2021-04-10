@@ -21,7 +21,7 @@ Initial setup Search depends on additional output content type of JSON in config
     </item>
     
     <item>
-      <title>Handling objects creating with Factory method</title>
+      <title>Handling creating of concrete types with Factory method</title>
       <link>https://edwincabezas.dev/posts/golang/design-patterns/factory-method/</link>
       <pubDate>Thu, 08 Apr 2021 08:06:25 +0600</pubDate>
       
