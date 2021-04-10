@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Posts</title>
+    <title>Handling objects creating with Factory method</title>
     
 
 
@@ -36,8 +36,13 @@
 <link rel="stylesheet" href="/css/style.css"/>
 
     
-    <link rel="stylesheet" href="/css/layouts/list.css">
-    <link rel="stylesheet" href="/css/navigators/sidebar.css">
+<meta name="description" content="Sample post with multiple images, embedded video ect." />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/css/layouts/single.css"/>
+<link rel="stylesheet" href="/css/navigators/sidebar.css">
 
 
     
@@ -96,9 +101,6 @@
 
       
       
-  
-  
-
   <section class="sidebar-section" id="sidebar-section">
     <div class="sidebar-holder">
       <div class="sidebar" id="sidebar">
@@ -112,31 +114,40 @@
   
   
   
+    
+    
+  
   
     
     <li>
-      <i class="fas fa-plus-circle"></i><a class="" href="/posts/golang/">Golang</a>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/golang/">Golang</a>
       
-      <ul class="">
+      <ul class="active">
         
   
   
   
   
+    
+    
+  
   
     
     <li>
-      <i class="fas fa-plus-circle"></i><a class="" href="/posts/golang/design-patterns/">Design Patterns</a>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/golang/design-patterns/">Design Patterns</a>
       
-      <ul class="">
+      <ul class="active">
         
   
   
   
   
+    
+    
+  
   
     
-    <li><a class="" href="/posts/golang/design-patterns/factory-method/">Factory method</a></li>
+    <li><a class="active" href="/posts/golang/design-patterns/factory-method/">Factory method</a></li>
   
 
 
@@ -170,72 +181,180 @@
       
       
 <section class="content-section" id="content-section">
-  <div class="content container-fluid" id="content">
-    <div class="container-fluid post-card-holder" id="post-card-holder">
+  <div class="content">
+    <div class="container p-0 read-area">
       
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://edwincabezas.dev/images/default-hero.jpg);'>
+      </div>
+
       
-        <div class="post-card">
-  <a href="/posts/golang/design-patterns/factory-method/" class="post-card-link">
-    <div class="card">
-      <div class="card-head">
-        <img class="card-img-top" src='/images/default-hero.jpg'/>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Handling objects creating with Factory method</h5>
-        <p class="card-text post-summary">Image Sample Factory Method Is a pattern of type creational that delegates the construction of objects to an interface. The interface has a method that return a type of specific object.
-Problem The company TransportPassengers has to transport many passengers after your workday.
-Solution First of all, we have to create our factory:
-func GetTransportType(quPassengers int) (product.ITransport, error) { if quPassengers &gt;= 1 &amp;&amp; quPassengers &lt;=5 { return concrete.NewTaxi(), nil } if quPassengers &gt;= 6 &amp;&amp; quPassengers &lt;=15 { return concrete.</p>
-      </div>
-      <div class="card-footer">
-        <span class="float-left">April 8, 2021</span>
-        <a
-        href="/posts/golang/design-patterns/factory-method/"
-        class="float-right btn btn-outline-info btn-sm"
-        >Read</a
-        >
-      </div>
-    </div>
-  </a>
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/EdwinAvatar.png'/>
+          <h5 class="author-name">Edwin Cabezas</h5>
+          <p>April 8, 2021</p>
+        </div>
+
+        <div class="title">
+          <h1>Handling objects creating with Factory method</h1>
+        </div>
+
+        <div class="post-content" id="post-content">
+          <h3 id="image-sample">Image Sample</h3>
+<img src="/posts/Golang/Design-Patterns/Factory-Method/images/images/forest.jpg"
+    
+        alt="Forest"
+    
+    
+    
+    
+    
+>
+
+<h2 id="factory-method">Factory Method</h2>
+<p>Is a pattern of type creational that delegates the construction of objects to an interface. The interface has a method that return a type of specific object.</p>
+<h3 id="problem">Problem</h3>
+<p>The company TransportPassengers has to transport many passengers after your workday.</p>
+<h3 id="solution">Solution</h3>
+<p>First of all, we have to create our factory:</p>
+<pre><code>func GetTransportType(quPassengers int) (product.ITransport, error) {
+
+    if quPassengers &gt;= 1 &amp;&amp; quPassengers &lt;=5 {
+        return  concrete.NewTaxi(), nil
+    }
+    if quPassengers &gt;= 6 &amp;&amp; quPassengers &lt;=15 {
+        return  concrete.NewVan(), nil
+    }
+    if quPassengers &gt;=16 {
+        return  concrete.NewBus(), nil
+    }
+
+    return nil, fmt.Errorf(&quot;wrong quantity of passengers&quot;)
+}
+</code></pre>
+<p>The factory will return the type concrete that you need</p>
+<p>The second step is create an <code>interface</code> to define the commons methods of our concrete types of transport.</p>
+<pre><code>type ITransport interface {
+    SetName(name string)
+    GetName() string
+}
+
+
+type Transport struct {
+    Name string
+}
+
+func (g *Transport) SetName(name string) {
+    g.Name = name
+}
+
+func (g *Transport) GetName() string {
+    return g.Name
+}
+</code></pre>
+<p>Now we have to create our concrete types (products)</p>
+<pre><code>type bus struct {
+    // indirectly implement all methods of iTransport and hence are of iTransport type
+    model.Transport 
+}
+
+func NewBus() product.ITransport {
+    return &amp;bus{
+        Transport: model.Transport{
+            Name: &quot;BUS&quot;,
+        },
+    }
+}
+</code></pre>
+<p>So far we have seen How Can we create the concrete products, factory and interface, but how to glue this parts ?</p>
+<pre><code>func main() {
+    typeTransport, _ := factory.GetTransportType(20)
+    printDetails(typeTransport)
+}
+
+func printDetails(g product.ITransport) {
+    fmt.Printf(&quot;Transport assigned: %s&quot;, g.GetName())
+    fmt.Println()
+}
+</code></pre>
+<p>GitHub repository:</p>
+
+        </div>
+
+        
+        
+          <div class="btn-improve-page">
+              <a href="https://github.com/edcab/edcab.github.io/edit//content/posts/Golang/Design-Patterns/Factory-Method/index.md">
+                <i class="fas fa-code-branch"></i>
+                Improve this page
+              </a>
+          </div>
+        
+
+        
+      <hr />
+        <div class="row next-prev-navigator">
+
+
+  
+
+  
+    
+    
+      
+        
+        
+        <div class="col-md-12 next-article">
+          <a href="/posts/introduction/" class="btn btn-outline-info">
+            <span>Next <i class="fas fa-chevron-circle-right"></i></span>
+            <br />
+            <span>Introduction</span>
+          </a>
+        </div>
+      
+    
+  
+
 </div>
 
+      <hr />
       
-        <div class="post-card">
-  <a href="/posts/introduction/" class="post-card-link">
-    <div class="card">
-      <div class="card-head">
-        <img class="card-img-top" src='/images/default-hero.jpg'/>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Introduction</h5>
-        <p class="card-text post-summary">Greeting! This is an introduction post. This post tests the followings:
- Appear post page  </p>
-      </div>
-      <div class="card-footer">
-        <span class="float-left">March 1, 2021</span>
-        <a
-        href="/posts/introduction/"
-        class="float-right btn btn-outline-info btn-sm"
-        >Read</a
-        >
-      </div>
-    </div>
-  </a>
-</div>
-
       
-    </div>
-    <div class="paginator">
-      
-
-
+      </div>
     </div>
   </div>
+  
 </section>
 
 
       
-       
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">Table of Contents</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#image-sample">Image Sample</a></li>
+      </ul>
+    </li>
+    <li><a href="#factory-method">Factory Method</a>
+      <ul>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#solution">Solution</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
     </div>
 
     
@@ -386,7 +505,12 @@ func GetTransportType(quPassengers int) (product.ITransport, error) { if quPasse
 
     
     
-    <script src="/js/list.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
 
   </body>
 </html>

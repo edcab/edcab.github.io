@@ -4,7 +4,17 @@
   
   <url>
     <loc>https://edwincabezas.dev/</loc>
-    <lastmod>2021-03-02T08:06:25+06:00</lastmod>
+    <lastmod>2021-04-08T08:06:25+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://edwincabezas.dev/posts/golang/design-patterns/factory-method/</loc>
+    <lastmod>2021-04-08T08:06:25+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://edwincabezas.dev/posts/</loc>
+    <lastmod>2021-04-08T08:06:25+06:00</lastmod>
   </url>
   
   <url>
@@ -13,7 +23,7 @@
   </url>
   
   <url>
-    <loc>https://edwincabezas.dev/posts/</loc>
+    <loc>https://edwincabezas.dev/posts/golang/design-patterns/</loc>
     <lastmod>2021-03-02T08:06:25+06:00</lastmod>
   </url>
   

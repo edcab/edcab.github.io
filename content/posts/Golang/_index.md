@@ -10,6 +10,6 @@ menu:
     weight: 10
 ---
 
-Greeting! This is a Golang post. :
+Greeting! This is a Golang post
 
 - In construction !!
