@@ -1,5 +1,4 @@
 baseURL: https://edwincabezas.dev
-
 languageCode: en-us
 title: "Edwin's Blog"
 theme: "toha"
@@ -12,12 +11,24 @@ languages:
     languageName: English
     weight: 1
 
-# Control TOC depth
+# Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
+# DefaultContentLanguage: fr
+
+# Allow raw html in markdown file
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   tableOfContents:
     startLevel: 2
     endLevel: 6
     ordered: false
+
+# Enable Google Analytics
+googleAnalytics: UA-XXXXXXXXX-X
+
+# Enable Disqus forum
+disqusShortname: does-not-exist
 
 # Enable global emoji support
 enableEmoji: true

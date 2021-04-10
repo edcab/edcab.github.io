@@ -8,7 +8,7 @@ menu:
     identifier: design-pattern-golang-factory-method
     parent: design-pattern-golang
     weight: 10
-hero: images/forest.jpg
+hero: images/Golang-logo.png
 ---
 
 ## Factory Method

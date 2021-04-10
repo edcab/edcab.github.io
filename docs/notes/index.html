@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Handling objects creating with Factory method</title>
+    <title>Notes</title>
     
 
 
@@ -37,13 +37,12 @@
 <link rel="stylesheet" href="/css/style.css"/>
 
     
-<meta name="description" content="Handling objects creating with Factory method" />
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
-/>
-<link rel="stylesheet" href="/css/layouts/single.css"/>
-<link rel="stylesheet" href="/css/navigators/sidebar.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+  />
+  <link rel="stylesheet" href="/css/layouts/notes.css">
+  <link rel="stylesheet" href="/css/navigators/sidebar.css">
 
 
     
@@ -115,6 +114,9 @@ if (!doNotTrack) {
 
       
       
+  
+  
+
   <section class="sidebar-section" id="sidebar-section">
     <div class="sidebar-holder">
       <div class="sidebar" id="sidebar">
@@ -123,59 +125,9 @@ if (!doNotTrack) {
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
-            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
+            <li id="list-heading"><a href="/notes" data-filter="all">Notes</a></li>
             <div class="subtree">
                 
-  
-  
-  
-  
-    
-    
-  
-  
-    
-    <li>
-      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/golang/">Golang</a>
-      
-      <ul class="active">
-        
-  
-  
-  
-  
-    
-    
-  
-  
-    
-    <li>
-      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/golang/design-patterns/">Design Patterns</a>
-      
-      <ul class="active">
-        
-  
-  
-  
-  
-    
-    
-  
-  
-    
-    <li><a class="active" href="/posts/golang/design-patterns/factory-method/">Factory method</a></li>
-  
-
-
-      </ul>
-    </li>
-  
-
-
-      </ul>
-    </li>
-  
-
 
             </div>
           </ul>
@@ -188,196 +140,26 @@ if (!doNotTrack) {
       
       
 <section class="content-section" id="content-section">
-  <div class="content">
-    <div class="container p-0 read-area">
-      
-      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://edwincabezas.dev/posts/golang/design-patterns/factory-method/images/Golang-logo.png);'>
-      </div>
-
-      
-      <div class="page-content">
-        <div class="author-profile ml-auto align-self-lg-center">
-          <img class="rounded-circle" src='/images/author/EdwinAvatar.png' alt="Author Image">
-          <h5 class="author-name">Edwin Cabezas</h5>
-          <p>April 8, 2021</p>
-        </div>
-
-        <div class="title">
-          <h1>Handling objects creating with Factory method</h1>
-        </div>
-
-        <div class="post-content" id="post-content">
-          <h2 id="factory-method">Factory Method</h2>
-<p>Is a pattern of type creational that delegates the construction of objects to an interface. The interface has a method that return a type of specific object.</p>
-<h3 id="problem">Problem</h3>
-<p>The company TransportPassengers has to transport many passengers after your workday.</p>
-<h3 id="solution">Solution</h3>
-<p>First of all, we have to create our factory:</p>
-<pre><code>func GetTransportType(quPassengers int) (product.ITransport, error) {
-
-    if quPassengers &gt;= 1 &amp;&amp; quPassengers &lt;=5 {
-        return  concrete.NewTaxi(), nil
-    }
-    if quPassengers &gt;= 6 &amp;&amp; quPassengers &lt;=15 {
-        return  concrete.NewVan(), nil
-    }
-    if quPassengers &gt;=16 {
-        return  concrete.NewBus(), nil
-    }
-
-    return nil, fmt.Errorf(&quot;wrong quantity of passengers&quot;)
-}
-</code></pre>
-<p>The factory will return the type concrete that you need</p>
-<p>The second step is create an <code>interface</code> to define the commons methods of our concrete types of transport.</p>
-<pre><code>type ITransport interface {
-    SetName(name string)
-    GetName() string
-}
-
-
-type Transport struct {
-    Name string
-}
-
-func (g *Transport) SetName(name string) {
-    g.Name = name
-}
-
-func (g *Transport) GetName() string {
-    return g.Name
-}
-</code></pre>
-<p>Now we have to create our concrete types (products)</p>
-<pre><code>type bus struct {
-    // indirectly implement all methods of iTransport and hence are of iTransport type
-    model.Transport 
-}
-
-func NewBus() product.ITransport {
-    return &amp;bus{
-        Transport: model.Transport{
-            Name: &quot;BUS&quot;,
-        },
-    }
-}
-</code></pre>
-<p>So far we have seen How Can we create the concrete products, factory and interface, but how to glue this parts ?</p>
-<pre><code>func main() {
-    typeTransport, _ := factory.GetTransportType(20)
-    printDetails(typeTransport)
-}
-
-func printDetails(g product.ITransport) {
-    fmt.Printf(&quot;Transport assigned: %s&quot;, g.GetName())
-    fmt.Println()
-}
-</code></pre>
-<h3 id="lets-code">Let&rsquo;s code</h3>
-<p>GitHub repository: <a href="https://github.com/edcab/designpattern-factorymethod-golang.git">https://github.com/edcab/designpattern-factorymethod-golang.git</a></p>
-
-        </div>
-
-        
-        
-          <div class="btn-improve-page">
-              <a href="https://github.com/edcab/edcab.github.io/edit//content/posts/Golang/Design-Patterns/Factory-Method/index.md" target="_blank">
-                <i class="fas fa-code-branch"></i>
-                Improve this page
-              </a>
-          </div>
+  <div class="content container-fluid" id="content">
+    <div class="container-fluid note-card-holder" id="note-card-holder">
         
 
+    
         
-      <hr />
-        <div class="row next-prev-navigator">
-
-
-  
-
-  
     
-      
-      <div class="col-md-6 previous-article">
-        <a href="/search/" class="btn btn-outline-info">
-          <div><i class="fas fa-chevron-circle-left"></i> Prev</div>
-          <div class="next-prev-text">Search Results</div>
-        </a>
-      </div>
-      
-    
-    
-      
-    
-  
 
-</div>
-
-      <hr />
+    </div>
+    <div class="paginator">
       
-      
-          <div id="disqus_thread"></div>
-<script type="text/javascript">
-  (function () {
-    
-    
-    if (window.location.hostname == "localhost") return;
 
-    var dsq = document.createElement("script");
-    dsq.type = "text/javascript";
-    dsq.async = true;
-    var disqus_shortname = "does-not-exist";
-    dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
-    (
-      document.getElementsByTagName("head")[0] ||
-      document.getElementsByTagName("body")[0]
-    ).appendChild(dsq);
-  })();
-</script>
-<noscript
-  >Please enable JavaScript to view the
-  <a href="https://disqus.com/?ref_noscript"
-    >comments powered by Disqus.</a
-  ></noscript
->
-<a href="https://disqus.com/" class="dsq-brlink"
-  >comments powered by <span class="logo-disqus">Disqus</span></a
->
 
-      
-      </div>
     </div>
   </div>
-  
-  <a id="scroll-to-top" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
-  
 </section>
 
 
       
-      
-  <section class="toc-section" id="toc-section">
-    
-    <div class="toc-holder">
-      <h5 class="text-center pl-3">Table of Contents</h5>
-      <hr>
-      <div class="toc">
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#factory-method">Factory Method</a>
-      <ul>
-        <li><a href="#problem">Problem</a></li>
-        <li><a href="#solution">Solution</a></li>
-        <li><a href="#lets-code">Let&rsquo;s code</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-      </div>
-    </div>
-    
-  </section>
-
+       
     </div>
 
     
@@ -529,12 +311,11 @@ func printDetails(g product.ITransport) {
 
     
     
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
-<script src="/js/single.js"></script>
-<script>
-  hljs.initHighlightingOnLoad();
-</script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  
 
   </body>
 </html>
