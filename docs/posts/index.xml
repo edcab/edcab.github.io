@@ -7,15 +7,5 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 Apr 2021 08:06:25 +0600</lastBuildDate><atom:link href="https://edwincabezas.dev/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Introduction</title>
-      <link>https://edwincabezas.dev/posts/introduction/</link>
-      <pubDate>Mon, 01 Mar 2021 08:06:25 +0600</pubDate>
-      
-      <guid>https://edwincabezas.dev/posts/introduction/</guid>
-      <description>Greeting! This is an introduction post. This post tests the followings:
- Appear post page  </description>
-    </item>
-    
   </channel>
 </rss>

@@ -8,7 +8,7 @@ menu:
     identifier: design-pattern-golang-factory-method
     parent: design-pattern-golang
     weight: 10
-hero: /images/forest.jpg
+hero: /images/posts/writing-posts/forest.jpg
 ---
 
 ## Factory Method
@@ -85,4 +85,5 @@ So far we have seen How Can we create the concrete products, factory and interfa
         fmt.Println()
     }
 
-GitHub repository: 
+### Let's code
+GitHub repository: https://github.com/edcab/designpattern-factorymethod-golang.git
