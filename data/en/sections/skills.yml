@@ -13,15 +13,15 @@ section:
 skills:
 - name: Java Development
   icon: "/images/sections/skills/java.png"
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
+  summary: "Capable of deploying, managing application on Kubernetes. Experienced in Kubernetes application deployment and management."
   url: "https://kubernetes.io/"
 
 - name: Go Development
   icon: "/images/sections/skills/go.png"
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
+  summary: "Actually I'm interesting on Language of Programmation Golang as the main language for development of APIS rest and Grpc Capable of writing scalable, testable, and maintainable program."
   url: "https://golang.org/"
 
 - name: Cloud Computing
   icon: "/images/sections/skills/cloud.png"
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+  summary: "Knowledge on some of the most important cloud providers such as AWS Services."
 

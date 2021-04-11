@@ -11,7 +11,7 @@ menu:
 hero: images/aws_localstack.jpg
 ---
 
-In this post we invite you to build an API with language of programmation Golang and use DynamoDB Service. But Everything in our environment Local. Do you believe me that ?, zero cost for use of the AWS Cloud Services. Let's Begin ! 
+In this post I'm inviting you to construct an API with language of programmation Golang and use DynamoDB Service. But Everything in our environment Local. Do you believe me that ?, zero cost for use of the AWS Cloud Services. Let's Begin ! 
 
 ## AWS and Localstack
 

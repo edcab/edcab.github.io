@@ -20,8 +20,8 @@ resume: "files/Edwin_Cabezas_Resume.pdf"
 # a summary about you
 summary: 'Im a passionate software engineer with 7 years of working experience. 
 I built OSS tools for [Kubernetes](https://kubernetes.io/) using GO and Java. 
-I have experiencie deploying and developing microservices in Cloud AWS, Im proud 
-of be strong using services like SNS/SQS Api Gateway, Lambda Functions and more'
+I have experiencie deploying microservices in AWS Cloud, Im proud 
+of be strong using services like SNS/SQS Api Gateway, Lambda Functions and much more'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.

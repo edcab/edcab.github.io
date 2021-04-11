@@ -26,7 +26,7 @@ Initial setup Search depends on additional output content type of JSON in config
       <pubDate>Sat, 10 Apr 2021 08:06:25 +0600</pubDate>
       
       <guid>https://edwincabezas.dev/posts/aws/local-environment/localstack/</guid>
-      <description>In this post we invite you to build an API with language of programmation Golang and use DynamoDB Service. But Everything in our environment Local. Do you believe me that ?, zero cost for use of the AWS Cloud Services. Let&amp;rsquo;s Begin !
+      <description>In this post I&amp;rsquo;m inviting you to construct an API with language of programmation Golang and use DynamoDB Service. But Everything in our environment Local. Do you believe me that ?, zero cost for use of the AWS Cloud Services. Let&amp;rsquo;s Begin !
 AWS and Localstack Many times we have the need to test an AWS service without occupying our time in infrastructure and without incurring expenses for it, we should have a tool that allows us to create a local environment and in this way to be able to carry out the necessary tests in a manner homologous to how the we do in our cloud provider, for this case, AWS Services.</description>
     </item>
     
